@@ -1,2 +1,2 @@
 # extensions-conda
- install enterprise_extensions with conda
+ Install enterprise_extensions and requirements using conda install.

@@ -1,0 +1,86 @@
+{% set name = "enterprise_extensions" %}
+{% set version = "2.0" %}
+
+package:
+    name: "{{ name|lower }}"
+    version: "{{ version }}"
+
+source:
+    git_url: https://github.com/nanograv/enterprise_extensions.git
+    # git_rev:
+    git_depth: 1
+
+build:
+    number: 1
+
+# test:
+#     source_files:
+#         - tests/
+#     commands:
+#         # run tests for enterprise here:
+#         # or we could make a test.sh script
+
+requirements:
+    build:
+        - python =3.8
+        - {{ compiler('cxx') }}
+        - {{ compiler('c') }}
+        - {{ compiler('fortran') }}
+        - autoconf
+        - automake
+        - libtool
+        - curl
+        - Cython
+
+    host:
+        - python =3.8
+        - numpy
+        - scipy
+        - matplotlib
+        - pandas
+        - jupyter
+        - notebook
+        - h5py
+        - Cython
+        - basemap
+        - astropy
+        - ephem
+        - mpi4py
+        - suitesparse
+        - healpy
+        - scikit-sparse
+        - jplephem
+        - tempo2
+        - libstempo
+        - pint-pulsar
+        - corner
+        - acor
+        - ptmcmcsampler
+        - enterprise
+
+    run:
+        - python =3.8
+        - numpy
+        - scipy
+        - matplotlib
+        - pandas
+        - jupyter
+        - notebook
+        - h5py
+        - Cython
+        - basemap
+        - astropy
+        - ephem
+        - mpi4py
+        - suitesparse
+        - healpy
+        - scikit-sparse
+        - jplephem
+        - tempo2
+        - libstempo
+        - pint-pulsar
+        - corner
+        - acor
+        - ptmcmcsampler
+        - enterprise
+
