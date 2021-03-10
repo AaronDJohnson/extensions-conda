@@ -26,9 +26,25 @@ requirements:
 
     host:
         - python =3.7
+        - conda-forge::suitesparse
+        - conda-forge::healpy
+        - conda-forge::scikit-sparse
+        - conda-forge::jplephem
+        - aarondjohnson::libstempo
+        - conda-forge::pint-pulsar
+        - conda-forge::corner
+        - aarondjohnson::ptmcmcsampler
         - enterprise
 
     run:
         - python =3.7
+        - conda-forge::suitesparse
+        - conda-forge::healpy
+        - conda-forge::scikit-sparse
+        - conda-forge::jplephem
+        - aarondjohnson::libstempo
+        - conda-forge::pint-pulsar
+        - conda-forge::corner
+        - aarondjohnson::ptmcmcsampler
         - enterprise
 
