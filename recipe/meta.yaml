@@ -11,7 +11,7 @@ source:
     git_depth: 1
 
 build:
-    number: 1
+    number: 3
 
 # test:
 #     source_files:
@@ -26,9 +26,9 @@ requirements:
 
     host:
         - python =3.7
-        - conda-forge::suitesparse
+        - conda-forge::suitesparse=5.7.2
         - conda-forge::healpy
-        - conda-forge::scikit-sparse
+        - conda-forge::scikit-sparse=0.4.4=py37h889afb3_1004
         - conda-forge::jplephem
         - aarondjohnson::libstempo
         - conda-forge::pint-pulsar
@@ -38,9 +38,9 @@ requirements:
 
     run:
         - python =3.7
-        - conda-forge::suitesparse
+        - conda-forge::suitesparse=5.7.2
         - conda-forge::healpy
-        - conda-forge::scikit-sparse
+        - conda-forge::scikit-sparse=0.4.4=py37h889afb3_1004
         - conda-forge::jplephem
         - aarondjohnson::libstempo
         - conda-forge::pint-pulsar
